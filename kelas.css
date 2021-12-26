@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background:#AA336A;
+    padding: 0px 20px;
+}
+
+.wrapper{
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(65, 49, 49, 0.125);
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #AA336A;
+    align-items: center;
+}
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .input_field label{
+    width: 100px;
+    color: #757575;
+}
+
+.wrapper .form .input_field .btn{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.wrapper .form .input_field .input, 
+.wrapper .form .input_field .textarea{
+    width: 50%;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.wrapper .form .input_field .textarea{
+    resize: none;
+    height: 80px;
+}
+
+.wrapper .form .input_field .custom_select {
+
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 8px solid;
+    border-color: red transparent transparent transparent;
+    
+}
+
+.wrapper .form .input_field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    background-color: AA336A;
+    border: 0;
+    color: #fff;
+    background: #AA336A;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 3px;
+    border-color: #AA400A;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wrapper .form .input_field:last-child{
+    margin-bottom: 0;
+}
+
+.wrapper .form .input_field .btn:hover{
+    font-size: 18px;
+    background: #AA336A;
+}
+
+.wrapper .form .input_field .optionsKelas{
+    margin-top: 20px;
+    padding-right: 10px;
+    position: relative;
+    left: -45px;
+
+    
+}
+
+.wrapper .form .input_field .optionsPend{
+    padding-right: 10px;
+    position: relative;
+    left: -45px;
+
+    
+}
+
+.wrapper .form .input_field .radios{
+  padding-right: 5px;
+    
+}
+
+.wrapper .btn-back{
+    width: 100%;
+    padding: 8px 10px;
+    background-color: AA336A;
+    border: 0;
+    color: #fff;
+    background: #AA336A;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 3px;
+    border-color: #AA400A;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+table {
+    transition: all 0.3s;
+}
+
+th {
+    padding: 5px 18px 5px 18px;
+    font-size: 13px;
+}
+
+.nama {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.asrama {
+    padding: 0 50px 0 50px;
+}
+
+td {
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    font-size: 11px;
+}
+
+.input {
+    transition: all 0.3s;
+    width: 55px;
+    font-size: 11px;
+}
+
+.btn {
+    font-size: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #1f1e1d;
+    text-align: center;
+    padding: 14px 20px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+  }
+
+button {
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 5px;
+    color: black;
+}

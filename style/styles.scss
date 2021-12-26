@@ -1,0 +1,230 @@
+$navbar: #0d457a;
+$background : #205585;
+$supplement1 : #e70606;
+$supplement2 : #3866a7;
+$text1 : #d9f20c;
+$text2 : #fff; 
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+}
+
+.navbar {
+    background: $navbar;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    #navbar__logo{
+        background-color: #fff;
+        background-image: linear-gradient(to top, $fff 0%, $supplement1 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent; 
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 32px;
+    }
+
+    .logo__amarzani{
+        margin-right: 0.5rem;
+    }
+
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+
+        .navbar__item {
+            height: 80px;
+
+           .navbar__links {
+               color: #fff;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               text-decoration: none;
+               padding: 0 1rem;
+               height: 100%;
+               &:hover{
+                   color: $background;
+                   transition: all 0.3s ease;
+               }
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+      }
+    
+      .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+      }
+    
+      .navbar__menu.active {
+        background: $navbar;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+        display: grid;
+      }
+    
+      #navbar__logo {
+        padding-left: 25px;
+      }
+    
+      .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+      }
+    
+      .navbar__item {
+        width: 100%;
+      }
+    
+      .navbar__links {
+        text-align: center;
+        padding: 10;
+        width: 100%;
+        display: list-item;
+      }
+    
+      .navbar__btn {
+        padding-bottom: 2rem;
+      }
+    
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+      }
+    
+      #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+      }
+    
+      .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+      }
+
+      #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+    
+      #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+}
+
+
+//Hero Section
+.hero {
+    background: $background;
+    background: linear-gradient(to right, $supplement2 ,$background);
+    padding: 200px 0;
+
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 90%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .hero__heading {
+        font-size: 100px;
+        margin-bottom: 24px;
+        color: $supplement1;
+
+        span {
+            background: #ee0979; /* fallback for old browsers */
+            background: -webkit-linear-gradient( to right, $navbar ,#ee0979);
+             /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, $text2 , #ee0979);
+             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -mo-text-fill-color: transparent;
+            }
+    }
+
+    .hero__description{
+        font-size: 60px;
+        background: #da22ff;
+        background: -webkit-linear-gradient(to right, #fff, #000);
+        background: linear-gradient(to right, #053D8B , #5CD5E8);
+        background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -mo-text-fill-color: transparent;
+    }
+
+    
+}

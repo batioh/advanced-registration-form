@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Kursus Bahasa Inggris</title>
+    <link rel= "stylesheet" href="">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="registration_form.html">Home</a>
+        <a href="assign-kelas.php">Assign Kelas</a>
+        <a href="list-kelas.html">List Kelas</a>
+        <a href="master-data.php">Master Data</a>
+        <a href="laporan-keuangan.php">Lap. Keuangan</a>
+    </div>
+        
+        
+
+    </div>
+    <form  class="form" action="connect.php" method="post">
+    <div class="wrapper">
+            <div class="title">Registrasi Kursus Bahasa Inggris</div>
+            
+                <div class="form">
+                    <div class="input_field">
+                        <label>Nama Lengkap</label>
+                        <input type="text" class="input" name="NamaLengkap">
+                    </div>
+                    <div class="input_field">
+                        <label>Kota Kelahiran</label>
+                        <input type="text" class="input" name="KotaKelahiran">
+                    </div>
+                    <div class="input_field">
+                        <label>Tanggal Lahir</label> 
+                        <input type="date" class="input" name="TanggalLahir">
+                    </div>
+                    <div class="input_field">
+                        <label>Alamat Rumah</label>
+                        <textarea  class="input" name="AlamatRumah"></textarea>
+                    </div>
+                    <div class="input_field">
+                        <label>Asrama</label>
+                        <input type="text" class="input" name="Asrama">
+                    </div>
+                    <div class="input_field">
+                        <label>Jenjang Pend.</label>
+                        <div class="optionsPend">
+                            <label class="radios"><input type="radio" name="JenPend" value="SLTP">  SLTP</label>
+                            <label class="radios"><input type="radio" name="JenPend" value="SLTA">   SLTA</label>
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <label >Sekolah</label>
+                        <input type="text" class="input" list="List_sekolah" name="Sekolah">
+                        <datalist id="List_sekolah">
+                            <option value="SMASA">SMA Darul Ulum 1</option>
+                            <option value="SMADU">SMA Darul Ulum 2</option>
+                            <option value="TRISMA">SMA Darul Ulum 3</option>
+                            <option value="MAU">MA Unggulan</option>
+                            <option value="MAN">MAN 2 Jombang</option>
+                            <option value="TELKOM">SMK Telkom</option>
+                            <option value="TEMPLEK">SMK Templek</option>
+                            <option value="SPASA">SMP Darul Ulum 1</option>
+                            <option value="RASTA">SMPN 3 Penterongan</option>
+                            <option value="MTSN">MTSN 2 Jombang</option>
+                            <option value="PK">MTS PK</option>
+                            <option value="MIN">MIN 4 Jombang</option>
+                        </datalist>
+                    </div>
+                    <div class="input_field">
+                        <label>Kelas</label>
+                        <div class="optionsKelas">
+                            <label class="radios"><input type="radio" name="Kelas" value="1 SMP">   1 SMP</label>
+                            <label class="radios"><input type="radio" name="Kelas" value="2 SMP">   2 SMP</label>
+                            <label class="radios"><input type="radio" name="Kelas" value="3 SMP">   3 SMP</label>
+                            <br>
+                            <br>
+                            <label class="radios"><input type="radio" name="Kelas" value="1 SMA">   1 SMA</label>
+                            <label class="radios"><input type="radio" name="Kelas" value="2 SMA">   2 SMA</label>
+                            <label class="radios"><input type="radio" name="Kelas" value="3 SMA">   3 SMA</label>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input_field">
+                            <label>Pilihan Program</label>
+                            <label><input type="checkbox" id="program" class="pilihan_program" value="BING-S" name="Program[]">BING-M</label>
+                            <label ><input type="checkbox" id="program" class="pilihan_program"  value="BING-C" name="Program[]">BING-C</label><br>
+                            <label><input type="checkbox" id="program"  class="pilihan_program" value="MATH-S" name="Program[]">MATH-M</label><br>
+                    </div>
+                    <div class="input_field">
+                        <input type="submit" value="Daftar" class="btn"/>
+                    </div>
+                </div>
+            
+
+
+            </div>
+    </form>
+</body>
+</html>
